@@ -42,7 +42,7 @@ button{background:none;border:1px solid #e0b95c;color:#e0b95c;padding:12px 30px;
 <div id="parentModal" onclick="tutupPesanOrtu()">
   <div class="parent-modal-card" onclick="event.stopPropagation()">
     <h2 id="parentTitle">Pesan untuk Ayah</h2>
-    <p id="parentWords">Tulis kata-kata untuk Ayah di sini...</p>
+    <p id="parentWords">Yah, maafkan anakmu yang belum bisa sering pulang. Di tanah rantau ini, aku belajar menjadi kuat, meski ada banyak malam ketika aku diam-diam merindukan rumah. Aku rindu nasihat Ayah, rindu suara Ayah, dan rindu saat Ayah bertanya, “Sudah makan belum, Nak?”\n\nKadang aku ingin sekali pulang, duduk di samping Ayah, dan bercerita tentang semua lelah yang selama ini kusimpan sendiri. Tapi jarak dan keadaan belum selalu mengizinkan.\n\nYah, doakan anakmu ini agar tetap kuat menjalani hari-hari jauh dari rumah. Aku mungkin jarang mengatakannya, tetapi aku sangat menyayangi Ayah. Semoga saat aku pulang nanti, Ayah masih ada di rumah, menyambutku seperti dulu. Aku rindu rumah, Yah. Aku rindu Ayah.</p>
     <button type="button" onclick="tutupPesanOrtu()">Tutup</button>
   </div>
 </div>
@@ -57,7 +57,7 @@ document.onkeydown=e=>{if(lb.style.display!='flex')return;if(e.key=='Escape')tut
 function bukaPesanOrtu(nama){
   document.getElementById('parentTitle').textContent='Pesan untuk '+nama;
   document.getElementById('parentWords').textContent =
-    nama==='Ayah' ? 'Tulis kata-kata untuk Ayah di sini...' : 'Tulis kata-kata untuk Ibu di sini...';
+    nama==='Ayah' ? 'Yah, maafkan anakmu yang belum bisa sering pulang. Di tanah rantau ini, aku belajar menjadi kuat, meski ada banyak malam ketika aku diam-diam merindukan rumah. Aku rindu nasihat Ayah, rindu suara Ayah, dan rindu saat Ayah bertanya, “Sudah makan belum, Nak?”\n\nKadang aku ingin sekali pulang, duduk di samping Ayah, dan bercerita tentang semua lelah yang selama ini kusimpan sendiri. Tapi jarak dan keadaan belum selalu mengizinkan.\n\nYah, doakan anakmu ini agar tetap kuat menjalani hari-hari jauh dari rumah. Aku mungkin jarang mengatakannya, tetapi aku sangat menyayangi Ayah. Semoga saat aku pulang nanti, Ayah masih ada di rumah, menyambutku seperti dulu. Aku rindu rumah, Yah. Aku rindu Ayah.' : 'Bu, ternyata jauh dari rumah membuatku mengerti betapa berharganya kasih sayang Ibu. Di sini, tidak ada lagi suara Ibu yang membangunkanku, tidak ada masakan Ibu, dan tidak ada tangan Ibu yang menenangkan saat aku sedang sedih.\n\nAda banyak hal yang ingin kuceritakan, tetapi sering kali hanya bisa kusimpan sendiri. Saat lelah, yang paling kurindukan adalah pulang dan mendengar Ibu berkata, “Tidak apa-apa, Nak, yang penting kamu sehat.”\n\nMaaf, Bu, jika selama ini aku belum bisa membalas semua pengorbanan Ibu. Aku sedang berusaha di tanah rantau ini, membawa doa dan harapan agar suatu hari bisa pulang dengan membawa kebahagiaan untuk Ibu.\n\nTolong jaga kesehatan, Bu. Jangan terlalu sering menungguku dengan rasa khawatir. Aku sangat merindukan Ibu. Andai jarak bisa kupeluk, mungkin sudah kupeluk rumah kita setiap malam.';
   document.getElementById('parentModal').style.display='flex';
 }
 function tutupPesanOrtu(){document.getElementById('parentModal').style.display='none'}
